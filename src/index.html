@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/a184e52bc8.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-Poppins">
+
+    <!--Navigation Section Starts-->
+    <nav class="py-4 border-dotted max-lg:text-[16px] text-[20px] fixed top-0 left-0 right-0 z-10 bg-white">
+        <div class="container px-2 max-w-[1150px] mx-auto max-lg:w-[90%] ">
+            <div class="flex justify-between max- items-center">
+                <!-- FN Logo and Text -->
+                <div class="flex gap-2 items-center">
+                    <img src="/images/FN logo.webp" class="w-10 inline-block" style="width: 40px">
+                    <div class="flex flex-col uppercase">
+                        <h3 class="font-bold">Fashn Notch</h3>
+                        <p class="max-lg:text-[11px] lg:text-[14px] text-slate-400">Online Shopping</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                <button class="bg-transparent  w-[60px] h-[60px] hidden max-md:flex flex-col gap-1 items-center justify-center">
+                    <div class="bg-slate-700 
+                   rounded-sm w-[30px] h-[3px]"></div>
+                    <div class="bg-slate-700 w-[30px] h-[3px]
+                    rounded-sm"></div>
+                    <div class="bg-slate-700 w-[30px] h-[3px] rounded-sm"></div>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="flex lg:gap-8 font-bold active:text-slate-400 max-md:hidden md:gap-4">
+                  <li class="hover:text-slate-400"><a href="#home">Home</a></li>  
+                  <li class="hover:text-slate-400"><a href="#men">Men's</a></li>  
+                  <li class="hover:text-slate-400"><a href="#women">Women's</a></li>  
+                  <li class="hover:text-slate-400"><a href="#kid">Kid's</a></li>  
+                  <!-- Dropdown Pages -->
+                  <li class="relative group">
+                    <div class="cursor-pointer hover:text-slate-400">Pages<span style="width: 2px; height: 2px"><i class="fa-solid
+                        fa-chevron-down"></i></span>
+                    </div>
+                   
+                    <div class="absolute w-[200px] bg-gray-200 z-10 rounded-md hidden group-hover:block">
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">About Us</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Product</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Single Product</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Contact Us</a>
+                    </div>
+                  </li>  
+                  <!-- Dropdown Features -->
+                  <li class="relative group">
+                    <div class="cursor-pointer hover:text-slate-400">Features<span style="width: 2px; height: 2px"><i class="fa-solid
+                        fa-chevron-down"></i></span>
+                    </div>
+                   
+                    <div class="absolute w-[200px] bg-gray-200 z-10 rounded-md hidden group-hover:block">
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Features Page 1</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Features Page 2</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Features Page 3</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-white hover:text-slate-400 hover:shadow-md">Features Page 4</a>
+                    </div>
+                  </li>  
+            
+                  <li class="hover:text-slate-400"><a href="#explore">Explore</a></li>  
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Section Ends -->
+
+    <!-- Hero Section Starts -->
+
+    <div class="py-12 border-y-2 border-dotted border-slate-300 mt-[100px]" id="home">
+        <div class="mx-4 grid grid-rows-5 gap-4 text-white
+            lg:grid-cols-4 lg:grid-rows-2">
+        <!-- Left Big Image -->
+            <div class="relative lg:col-span-2 lg:row-span-2">
+                <img src="/images/left-banner-image.jpg" class="w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[60%] mx-auto flex flex-col items-start justify-center gap-8">
+                    <h1 class="text-6xl font-bold">We Are <br>Fashionista <br>Notch</h1>
+                    <p class="text-[1.07rem] italic">We have all designs you might have in mind!</p>
+                    <button class="bg-transparent border-2 border-white px-6 py-2 font-semibold hover:bg-black hover:border-none ">Purchase Now!</button>
+                </div>
+            </div>
+
+            <!-- Right Small Images -->
+            <div class="relative group">
+                <img src="/images/baner-right-image-01.jpg" class="opacity-[1.5] w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto flex flex-col items-center justify-center gap-2">
+                    <h2 class="max-xmd:text-4xl font-bold 
+                    text-[24px]">Women</h2>
+                    <p class="italic max-xmd:text-[24px] text-[16px]">Best Clothes For Women</p>
+                </div>
+
+                <!-- Display div on hover -->
+                <div class="hidden group-hover:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] group-hover:flex flex-col items-center justify-center gap-4 bg-black px-6 py-2 ">
+                    <h2 class="font-bold text-2xl">Women</h2>
+                    <p class="max-xmd:block max-xl:hidden xl:block text-center">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+                    <button class="border border-dotted border-white px-6 py-2 hover:bg-white hover:border-none hover:text-black">Discover More</button>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="/images/baner-right-image-02.jpg" class="w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto flex flex-col items-center justify-center gap-2">
+                    <h2 class="max-xmd:text-4xl font-bold 
+                    text-[24px]">Men</h2>
+                    <p class="italic max-xmd:text-[24px] text-[16px]">Best Clothes For Men</p>
+                </div>
+
+                <!-- Display div on hover -->
+                <div class="hidden group-hover:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] group-hover:flex flex-col items-center justify-center gap-4 bg-black px-6 py-2">
+                    <h2 class="font-bold text-2xl">Men</h2>
+                    <p class="max-xmd:block max-xl:hidden xl:block text-center">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+                    <button class="border border-dotted border-white px-6 py-2 hover:bg-white hover:border-none hover:text-black">Discover More</button>
+                </div>
+            </div>
+
+            <div class="col-span-1 row-span-1 relative group">
+                <img src="/images/baner-right-image-03.jpg" class="w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto flex flex-col items-center justify-center gap-2">
+                    <h2 class="max-xmd:text-4xl font-bold 
+                    text-[24px]">Kids</h2>
+                    <p class="italic max-xmd:text-[24px] text-[16px]">Best Clothes For Kids</p>
+                </div>
+
+                <!-- Display div on hover -->
+                <div class="hidden group-hover:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] group-hover:flex flex-col items-center justify-center gap-4 bg-black px-6 py-2">
+                    <h2 class="font-bold text-2xl">Kids</h2>
+                    <p class="max-xmd:block max-xl:hidden xl:block text-center">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+                    <button class="border border-dotted border-white px-6 py-2 hover:bg-white hover:border-none hover:text-black">Discover More</button>
+                </div>
+            </div>
+
+            <div class="col-span-1 row-span-1 relative group">
+                <img src="/images/baner-right-image-04.jpg" class="opacity-[1.5] w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto flex flex-col items-center justify-center gap-2">
+                    <h2 class="max-xmd:text-4xl font-bold 
+                    text-[24px]">Accessories</h2>
+                    <p class="italic max-xmd:text-[24px] text-[16px]">Best Trend Accessories</p>
+                </div>
+
+                <!-- Display div on hover -->
+                <div class="hidden group-hover:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] group-hover:flex flex-col items-center justify-center gap-4 bg-black px-6 py-2">
+                    <h2 class="font-bold text-2xl">Accessories</h2>
+                    <p class="max-xmd:block max-xl:hidden xl:block text-center">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+                    <button class="border border-dotted border-white px-6 py-2 hover:bg-white hover:border-none hover:text-black">Discover More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section Ends -->
+
+    <!-- Men's Section Starts-->
+    <section class="border-dotted border-b-2 border-slate-300" id="men">
+        <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto max-lg:w-[90%]">
+            <h1 class="text-3xl font-bold">Men's Latest</h1>
+            <p class="italic mb-12 text-slate-500">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+
+        <!-- carousel card section -->
+            <div class="flex gap-6 w-full">
+                
+                <!-- Classic Spring -->
+                <div class="w-full">
+                    <img src="/images/men-01.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Classic Spring</h2>
+                            <p class="text-slate-400">$120.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Air Force -->
+                <div class="max-sm:hidden w-full">
+                    <img src="/images/men-02.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Air Force 1 X</h2>
+                            <p class="text-slate-400">$90.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Love Nana'20 -->
+                <div class="max-lg:hidden w-full">
+                    <img src="/images/men-03.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Love Nana'20</h2>
+                            <p class="text-slate-400">$150.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Men's Section Ends -->
+
+    <!-- Women's Section Starts-->
+    <section class="border-dotted border-b-2 border-slate-300" id="women">
+        <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto max-lg:w-[90%]">
+            <h1 class="text-3xl font-bold">Women's Latest</h1>
+            <p class="italic mb-12 text-slate-500">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+
+        <!-- carousel card section -->
+            <div class="flex gap-6">
+                <!-- New Green Jacket -->
+                <div class="w-full">
+                    <img src="/images/women-01.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">New Green Jacket</h2>
+                            <p class="text-slate-400">$75.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classic Dress -->
+                <div class="max-sm:hidden w-full">
+                    <img src="/images/women-02.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Classic Dress</h2>
+                            <p class="text-slate-400">$45.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spring Collection -->
+                <div class="max-lg:hidden w-full">
+                    <img src="/images/women-03.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Spring Collection</h2>
+                            <p class="text-slate-400">$130.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Women's Section Ends -->
+
+    <!-- Kid's Section Starts-->
+    <section class="border-dotted border-b-2 border-slate-300" id="kid">
+        <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto max-lg:w-[90%]">
+            <h1 class="text-3xl font-bold">Kid's Latest</h1>
+            <p class="italic mb-12 text-slate-500">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+
+        <!-- carousel card section -->
+            <div class="flex gap-6">
+                <!-- School Collection -->
+                <div class="w-full">
+                    <img src="/images/kid-01.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">School Collection</h2>
+                            <p class="text-slate-400">$80.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summer Cap -->
+                <div class="max-sm:hidden w-full">
+                    <img src="/images/kid-02.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Summer Cap</h2>
+                            <p class="text-slate-400">$12.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classic Kid -->
+                <div class="max-lg:hidden w-full">
+                    <img src="/images/kid-03.jpg" class="w-full">
+
+                    <!-- Text and Rating -->
+                    <div class="flex justify-between my-6">
+                        <!-- Text -->
+                        <div>
+                            <h2 class="font-bold text-xl">Classic Kid</h2>
+                            <p class="text-slate-400">$30.0</p>
+                        </div>
+                        <!-- Rating -->
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kid's Section Ends -->
+
+    <!--Products Section Starts-->
+    <section class="border-dotted border-b-2 border-slate-300">
+        <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto grid grid-cols-2 gap-8 max-lg:grid-cols-1 max-lg:max-w-[90%]">
+
+            <!-- Left container -->
+            <div class="flex flex-col gap-4 items-start justify-start">
+                <h1 class="font-bold text-3xl">Explore Our Products</h1>
+                <p class="text-slate-400 font-medium">Our products come in various shapes and sizes and we are sure you will get what you want from our stock. Feel free to browse through as you wish and get in touch with us as we would like to hear from you.</p>
+
+                <div class="my-4 font-medium italic flex gap-4">
+                    <i class="fa-solid fa-quote-left text-4xl items-center"></i>
+                    <p>You are not allowed to redistribute our products or any of our items on any other website.</p>
+                </div>
+                <p class="text-slate-400 font-medium">Make your business shine online with a custom clothing website designed just for you by a professional designer. Get inspired and start planning the perfect clothing web design today.</p>
+
+                <p class="text-slate-400 font-medium">If you want an amazing clothing website that stands out from the competition, work with a professional designer. Find and hire a designer to make your vision come to life, or host a design contest and get ideas from designers around the world.</p>
+
+                <button class="border border-black px-6 py-2 hover:bg-black hover:text-white">
+                    Discover More
+                </button>
+            </div>
+
+            <!-- Right Container -->
+            <div class="grid grid-cols-2 grid-rows-2 gap-3 max-lg:grid-rows-4 max-lg:flex max-lg:flex-col max-lg:gap-8">
+
+                <div class="bg-slate-100 flex flex-col justify-center items-center max-lg:h-[200px]">
+                    <h2 class="text-3xl font-bold">Leather Bags</h2>
+                    <p class="text-slate-500 italic">Latest Collection</p>
+                </div>
+
+                <img src="/images/explore-image-01.jpg" class="w-full max-lg:h-[600px]"> 
+
+                <img src="/images/explore-image-02.jpg" class="w-full h-full max-lg:h-[600px]">
+
+                <div class="bg-slate-100 flex flex-col justify-center items-center max-lg:h-[200px]">
+                    <h2 class="text-3xl font-bold">Different Types</h2>
+                    <p class="text-slate-500 italic">Over 304 Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section Ends -->
+   
+
+    <!-- Social Media Section Starts -->
+    <section class="border-dotted border-b-2 border-slate-300">
+        <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto max-lg:w-[90%]">
+            <h2 class="font-bold text-3xl">Social Media</h2>
+            <p class="italic mb-12 text-slate-500">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+
+            <div class="grid grid-cols-6">
+                <img src="/images/instagram-01.jpg">
+                <img src="/images/instagram-02.jpg">
+                <img src="/images/instagram-03.jpg">
+                <img src="/images/instagram-04.jpg">
+                <img src="/images/instagram-05.jpg">
+                <img src="/images/instagram-06.jpg">
+            </div>
+        </div>
+    </section>
+   <!-- Social Media Section Ends -->
+
+    <!-- Newsletter Section Starts -->
+    <div class="container px-2 mt-10 py-10 max-w-[1150px] mx-auto grid grid-cols-3 gap-16  max-lg:w-[80%] max-lg:flex flex-col">
+        <!-- Left Container -->
+        <div class="col-span-2 row-span-2 flex flex-col">
+            
+            <h2 class="font-bold text-4xl leading-[3rem]">By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+            <p class="italic mb-12 text-slate-500">Details to details is what makes Fashion Notch different from all other fashion platforms.</p>
+            <div class="flex gap-6 max-lg:flex-col">
+
+                <input type="text" placeholder="Your Name" class="italic text-black border border-black/[0.5] px-4 py-2 flex-1">
+
+                <input type="email" placeholder="Your Email Address" class="italic text-black border border-black/[0.5] px-4 py-2 flex-1">
+
+                <div class=" text-xl bg-black text-white p-3 cursor-pointer max-lg:self-center max-lg:place-self-center max-md:w-[100%] max-md:flex max-md:items-center max-md:justify-center"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+        </div>
+
+        <!-- Right Container -->
+        <div class="grid grid-cols-2 grid-rows-3 gap-4">
+            <div>
+                <h2 class="font-bold text-xl">Store Location:</h2>
+                <p class="text-slate-500">Sunny Isles Beach, FL 33160, United States</p>
+            </div>
+
+            <div>
+                <h2 class="font-bold text-xl">Work Hours:</h2>
+                <p class="text-slate-500">07:30 AM - 09:30PM Daily</p>
+            </div>
+
+            <div>
+                <h2 class="font-bold text-xl">Phone:</h2>
+                <p class="text-slate-500">010-020-0340</p>
+            </div>
+
+            <div>
+                <h2 class="font-bold text-xl">Email:</h2>
+                <p class="text-slate-500">010-020-0340</p>
+            </div>
+
+            <div>
+                <h2 class="font-bold text-xl">Office Location:</h2>
+                <p class="text-slate-500">North Miami Beach</p>
+            </div>
+
+            <div>
+                <h2 class="font-bold text-xl">Social Media:</h2>
+                <p class="text-slate-500">Youtube, LinkedIn, Discord, Whatsapp</p>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Section Ends -->
+
+    <!-- Footer Starts-->
+    <footer class="bg-black text-white p-10">
+        <div class="container px-2 mt-10 pb-12 max-w-[1150px] mx-auto border-b border-white">
+            <div class="grid grid-cols-4 gap-8 max-lg:grid-cols-1 max-lg:text-center">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+
+                    <div class="flex gap-4 max-lg:items-center max-lg:justify-center">
+                        <img src="/images/FN logo.webp" class="w-16 h-16 rounded-md max-lg:w-12 max-lg:h-12">
+                        <div class="text-left">
+                            <h2 class="uppercase text-xl font-extrabold">Fashion Notch</h2>
+                            <p class="uppercase ">Online Shopping</p>
+                        </div>
+                    </div>
+
+                    <p>16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
+                    <p>fashionNotch@fashionforall.com</p>
+                    <p>010-020-0340</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-xl font-bold">Shopping & Categories</h2>
+                    <a href="#men">Men's Shopping</a>
+                    <a href="#women">Women's Shopping</a>
+                    <a href="#kid">Kid's Shopping</a>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-xl font-bold">Useful Links</h2>
+                    <a href="#">Homepage</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Help</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-xl font-bold">Help & Information</h2>
+                    <a href="#">Help</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Tracking ID</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex justify-around items-center gap-4 max-md:flex-col max-md:justify-center text-center max-md:gap-2">
+            <div class="flex flex-col justify-center items-center py-5">
+                <p>Copyright &copy; 2024 Fashion Notch Co Ltd. All Rights Reserved.</p>
+                <p>Design: <span class="text-blue-300 lg:text-[18px]">Dammy Codes</span></p>
+            </div>
+            <a href="#home" class="block font-bold lg:text-[18px] cursor-pointer">Back To Top</a>
+        </div>
+        
+    </footer>
+    <!-- Footer Ends -->
+
+</body>
+</html>
