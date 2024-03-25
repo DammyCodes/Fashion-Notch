@@ -1,0 +1,2 @@
+This is a single webpage built with Tailwind CSS and contains different sections including: Navigation, Hero, Men, Women, Kids, Product, Social Media, Newsletter sections and a Footer.
+The navigation dropdown menu in Mobile Interface has not been included and this is because I intend to use JavaScript later on to create it. Right now, I am focusing on better understanding and implementation of Tailwind CSS. 
